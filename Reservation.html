@@ -1,0 +1,130 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  </head>
+    
+    <title> Reservation </title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+
+  <Body>
+<!----Start Banner section*----> 
+    <div class="res-banner">
+      <div class="navbar">
+        <a href="index.html">
+          <img src="images/logo.png" class="logo">
+        </a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About-us.html">About us</a></li>
+        <li><a href="Reservation.html">Make a reservation</a></li>
+      </ul>
+     </div>
+    </div>
+
+    <div class="res-content">
+      <h1> Reservation</h1>
+    </div>
+<!----End Banner section*----> 
+
+  
+<!----Start Form*---->
+<section class="Reservation">
+
+  <form action="reservation" method="post">
+    <div class="elem-group">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="visitor_name" placeholder="How shall we call you" required>
+    </div>
+    <div class="elem-group">
+      <label for="email">Your E-mail</label>
+      <input type="email" id="email" name="visitor_email" placeholder="Applause@gmail.com" required>
+    </div>
+    <div class="elem-group">
+      <label for="phone">Your Phone</label>
+      <input type="tel" id="phone" name="visitor_phone" placeholder="021-0819-2289" required>
+    </div>
+    
+    <div class="elem-group">
+      <label for="room-selection">Your Arriving Time</label>
+      <select id="room-selection" name="room_preference" required>
+          <option value="#">6:00 PM</option>
+          <option value="#">7:00 PM</option>
+          <option value="#">8:00 PM</option>
+          <option value="#">9:00 PM</option>
+      </select>
+    </div>
+    <div class="elem-group">
+      <label for="numbers">How many people are coming</label>
+      <input type="text" id="number" name="visistor_nuber" placeholder="0" required>
+    </div>
+  
+    <div class="elem-group">
+      <label for="message">Anything Else? (eg. Food Allergies)</label>
+      <textarea id="message" name="visitor_message" placeholder="(eg. Food Allergies)" required></textarea>
+    </div>
+    <button type="submit"><span></span>Make a reservation</button>
+  </form>
+</section>
+<!----End form*---->
+
+<!----Map*---->
+
+<section class="location">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3192.4936278771197!2d174.76484897478932!3d-36.85460167223162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d47e410065fed%3A0x6e3648b1bcedcf08!2s37%20Symonds%20Street%2C%20Grafton%2C%20Auckland%201010!5e0!3m2!1szh-CN!2snz!4v1685731887236!5m2!1szh-CN!2snz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+</iframe>"
+</section>
+
+<!----Map*---->
+
+<!----Footer*---->
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-row">
+      <div class="footer-col">
+        <a href="index.html">
+          <img src="images/logo.png" class="logo">
+        </a>
+   <p>@ 2023 All copyright reserved by Applause Bar</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contact us</h4>
+        <ul>
+          <li><a href="#">02108192289</a></li>
+          <li><a href="#">Applause@gmail.com</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Privacy Centre</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of service</a></li>
+          <li><a href="#">Brand protection</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>follow us</h4>
+        <div class="social-links">
+          <i class="bi bi-instagram"></i>
+    <i class="bi bi-facebook"></i>
+    <i class="bi bi-twitter"></i>
+    <i class="bi bi-line"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!----Footer*---->
+
+
+  </Body>
+</html>

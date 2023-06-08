@@ -1,0 +1,508 @@
+/*--Starts--*/
+*{
+  Margin:0;
+  padding:0;
+  font-family: sans-serif;
+}
+
+/*-------Home page Starts-------*/
+/*--Nav. bar starts--*/
+.banner{
+  width:100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(images/background.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar{
+  width:85%;
+  margin:auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+  width: 120px;
+  cursor: pointer;
+}
+
+.navbar ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+.navbar ul li::after{
+  content: '';
+  height: 3px;
+  width: 0;
+  background: rgb(100, 75, 211);
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5S;
+}
+
+.navbar ul li .underline:hover::after{
+  width:100%
+}
+
+.underline:hover {
+  color:darksalmon;
+}
+
+.navbar ul li .underline::after{
+  content: '';
+  height: 3px;
+  width: 0;
+  background: rgb(42, 98, 38);
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5S;
+}
+
+.navbar ul li:hover::after{
+  width:100%
+}
+
+.navbar ul li .res-dec ::after{
+  content: '';
+  height: 3px;
+  width: 0;
+  background: rgb(150, 206, 47);
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5S;
+}
+
+.navbar ul li .res-dec :hover::after{
+  width:100%
+}
+
+.content {
+  width: 100%;
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: white;
+}
+
+.content h1{
+  font-size: 70px;
+  margin-top: 80px;
+  color: white;
+  font-family: 'Londrina Outline';
+}
+
+.content p{
+  margin: 20px auto;
+  font-weight: 100;
+  line-height: 25px;
+  color:white;
+}
+
+button{
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid rgb(100, 75, 211);
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+span{
+  background:rgb(100, 75, 211);
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+button:hover span{
+  width: 100%
+}
+
+button:hover span{
+  border:none;
+}
+/*--Nav. bar ends--*/
+
+/*--Menu stats--*/
+h2{ 
+  font-size: 36px;
+  font-weight: 600
+}
+
+p{
+  color:grey;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+
+.menu{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.column{
+  flex-basis: 32%;
+  border-radius: 10px ;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.row {
+  margin-left: 10%;
+  margin-right:10%;
+  margin-top: 5%;
+  display: flex;
+  height: 450px;
+  justify-content: space-between;
+}
+
+.column img {
+  width:100%;
+  display:flex;
+  object-fit: cover;
+}
+
+.layer{
+  background: transparent;
+  height:100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+.layer:hover{
+  background: rgba(112, 47, 169, 0.7);
+  cursor: pointer;
+}
+
+.layer h3 {
+  width: 100%;
+  font-weight: 500;
+  color: white;
+  font-size: 26px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.layer:hover h3{
+  bottom: 49%;
+  opacity: 1;
+}
+/*--Menu ends--*/
+
+/*--Make a reservation Starts--*/
+.mar{
+  margin: 100px auto;
+  border-radius: 10px;
+}
+.footer{
+  width:100%;
+  height: 50%;
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(images/makeareserv.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.footertext{
+  width: 100%;
+  position: absolute;
+  transform: translateY(-160%);
+  text-align: center;
+}
+
+.footertext{
+  color:white;
+  margin-bottom: 40px;
+  padding: 0;
+}
+/*--Make a reservation Ends--*/
+
+/*--About us Starts--*/
+.aboutus{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.aboutus .icons{
+  color: rgba(122, 83, 190, 0.779);
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 18px 0;
+  margin-bottom: 10px;
+ 
+}
+/*--About us Ends--*/
+
+.end {
+  Width:100%
+}
+/*-------Home page Ends-------*/
+
+/*-------About us Starts-------*/
+.au-banner{
+  width:100%;
+  height: 50vh;
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(images/background.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.au-content {
+  width: 100%;
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: white;
+}
+
+.au-content h1{
+  font-size: 70px;
+  margin-top: -180px;
+  color: white;
+  font-family: 'Londrina Outline';
+}
+/*-------About us Ends-------*/
+
+/*-----Reservation page Starts-----*/
+.res-banner{
+  width:100%;
+  height: 50vh;
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(images/makeareserv.png);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.res-content {
+  width: 100%;
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: white;
+}
+
+.res-content h1{
+  font-size: 70px;
+  margin-top: -180px;
+  color: white;
+  font-family: 'Londrina Outline';
+}
+/*-----Banner Ends-----*/
+.reservation{
+  width: 33.2%;
+  margin: 0 auto;
+  padding: 50px;
+  position: center;
+  font-size: large;
+}
+
+.reservation div.elem-group {
+  margin: 20px 0;
+}
+
+.label {
+  display: block;
+  font-family: sans-serif;
+  padding-bottom: 10px;
+}
+
+.reservation input, select, textarea {
+  border-radius: 2px;
+  border: 2px solid #777;
+  width: 100%;
+  padding: 15px;
+  margin-top: 17px;
+  outline: none;
+}
+
+.reservation .textarea {
+  height: 300px;
+}
+
+.reservation button{
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid rgb(100, 75, 211);
+  background: transparent;
+  color: black;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.15, color 0.15, box-shadow 0.15s;
+}
+
+.reservation button:hover{
+  background-color: rgb(100, 75, 211) ;
+  color: white;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 6);
+}
+
+.location {
+  width:80%;
+  margin:auto;
+  padding: 80px 0;
+}
+
+.location iframe {
+  width: 100%;
+}
+/*-----Reservation page Ends-----*/
+
+
+/*-----Coming soon page Starts-----*/
+.baby{
+  width: 20%;
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px
+}
+
+.coming-soon{
+  color: white;
+}
+
+.end{
+  margin-top: 20px;
+}
+
+/*-----Coming soon page Ends-----*/
+
+/*-----Footer Starts-----*/
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+.container{
+	width:100%;
+	margin:auto;
+}
+
+.footer-row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+  background-color: black;
+    padding: 70px 0;
+    margin-top: 100px;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: white;
+	height: 2px;
+	box-sizing: border-box;
+	width: 70px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col .social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-col .social-links i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  text-align: center;
+  line-height: 40px;
+  margin: 10px 10px 10px 0;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+.footer-col .social-links i:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
+.footer-col .social-links i:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+/*-----Footer Ends-----*/
+/*--Ends--*/
+
